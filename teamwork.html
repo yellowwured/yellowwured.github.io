@@ -1,0 +1,125 @@
+<!--星期三上午SKY助教的專題一,期末專題-->
+<!DOCTYPE HTML>
+
+<html lang="zh-tw">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="巫霽 黃安德 邱繼弘">
+    <meta name="keywords" content="潘孟鉉,Meng-Shiuan">
+    <meta name="revised" content="巫霽 黃安德 邱繼弘 期末報告2019">
+    <link rel="stylesheet" href="style.css">
+    <title>分工</title>
+</head>
+
+
+<body>
+    <header id="firstlook" class="grid">
+        <div class="backgroundimg"></div>
+        <article class="container">
+            <h1>團隊分工</h1>
+            <p>Team Work</p>
+        </article>
+    </header>
+
+    <nav>
+        <p>
+            <a href="index.html"  class="nav-buttons">主頁</a>
+            <a href="honor.html"  class="nav-buttons">榮譽事項</a>
+            <a href="course.html" class="nav-buttons">學術服務</a>
+            <a href="research.html" class="nav-buttons">研究計畫＆成果</a>
+            <a href="video.html"  class="nav-buttons">成果影片</a>
+            <a href="#sec-D"  class="nav-buttons">聯絡資訊</a>
+            <a href="teamwork.html" class="nav-buttons">團隊分工</a>
+        </p>
+    </nav>
+
+   <!--回到上面的按鈕-->
+   <a class=backtotopbtn href="#" title="Go to Top">Top</a> 
+
+     <main id="main">
+        <!--C-->
+        <section id="sec-C" class="box">
+            <article class="container">
+                <h2 class="article-title">巫霽</h2>
+                <p>
+                    <ul>
+                        <li>基礎網頁架構</li>
+                    </ul>
+                </p>
+            </article>
+            <article class="container">
+                <h2 class="article-title">黃安德</h2>
+                <p>
+                    <ul>
+                        <li>利用行人定位推算技術與群眾外包概念實現室內導引系統, 主持人, 2018.08~2019.07</li>
+                    </ul>
+                </p>
+            </article>
+            <article class="container">
+                <h2 class="article-title">邱繼弘</h2>
+                <p>
+                    <ul>
+                        <li>利用行人定位推算技術與群眾外包概念實現室內導引系統, 主持人, 2018.08~2019.07</li>
+                    </ul>
+                </p>
+            </article>
+        </section>
+
+        <section id="sec-D" class="box">
+            <article class="cube">
+                <h2 class="article-title">教授聯絡方式</h2>
+                <p>如果你想聯絡潘教授的話請參考以下的聯絡方式,要注意的是此網站是潘教授的學生製作非其本人,如果是網站相關的問題請參考下一欄的作者聯繫方式</p>
+                <p>教授的Email: <a
+                        href="mailto: mspan@mail.tku.edu.tw?subject=WuJi_website_QuestionstoMrPan">mspan@mail.tku.edu.tw</a>
+                </p>
+                <button class ="hidebtn" onclick="hidemytext1()">收起/展开快速</button>
+                
+                <div id="hidingparts1"> 
+                    
+                    <form action="mailto:mspan@mail.tku.edu.tw" method="get">
+                        <h6>(由于沒有php，所以會用內建Mail發送留言)</h6>
+                        你的名字: </br>
+                        <input type="text" name="subject"></br>
+                        訊息內容: </br>
+                        <textarea name="body"></textarea></br>
+                        <input type="submit" value="發送訊息">
+                    </form>
+    
+                </div>
+                
+                <p>淡江大學研究室: E659</p>
+                <p>電話: 02-2621-5656 分機: 3520</p>
+            </article>
+            <article class="cube">
+                <h2 class="article-title">網站聯絡方式</h2>
+                <p>如果你想對這個網站提出建議,請用以下聯絡方式</p>
+                <p>Email: <a href="mailto:jiwuperbear@gmail.com?subject=CSS2Feedback">jiwuperbear@gmail.com</a></p>
+                <button class ="hidebtn" onclick="hidemytext2()">收起/展开快速</button>
+                
+                <div id="hidingparts2"> 
+                    
+                    <form action="mailto:jiwuperbear@gmail.com" method="get">
+                        <h5>(由于沒有php，所以會用內建Mail發送留言)</h5>
+                        你的名字: </br>
+                        <input type="text" name="subject"></br>
+                        訊息內容: </br>
+                        <textarea name="body"></textarea></br>
+                        <input type="submit" value="發送訊息">
+                    </form>
+    
+                </div>
+                <p>電話: 暫不提供</p>
+            </article>
+        </section>
+    </main>
+    <footer id="index-footer" class="box">
+        <div>網站製作 : 巫霽 黃安德 邱繼弘 <br>指導助教 : Sky</div>
+        <h5 class="music-name">Joakim Karud - Good Old Days by<br>
+            <audio id="music" autoplay controls loop src="Good Old Days by Joakim Karud.mp3" ></audio></h5>
+        <script>document.getElementById("music").volume = 0.4;</script>
+    </footer>
+    <script src="js.js"></script>
+</body>
+
+</html>

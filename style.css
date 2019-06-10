@@ -1,0 +1,478 @@
+html{
+    scroll-behavior: smooth;
+}
+nav{
+    Text-align:center;
+    border-top: 3px;
+    border-bottom: 3px;
+}
+nav a{
+    color: #90bd3d;
+}
+
+h5{
+    color:grey;
+    font-size: 8px;
+}
+h6{
+    color: lightskyblue;
+    font-size: 8px;
+}
+/**以下為聯絡表單的CSS 6/8巫霽加的**/
+.hidebtn{
+    background-color:rgba(81, 148, 81, 0.582);
+    border: none;
+    color: white;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.hidebtn-content{
+    background: #eaeaea;
+    border: none;
+    color: rgba(19, 107, 59, 0.699);
+    text-decoration: none;
+    cursor: pointer;
+}
+#hidingparts1, #hidingparts2{ 
+    display: none;
+    margin-left: 30px;
+}
+#hidingparts3, #hidingparts4, 
+#hidingparts5, #hidingparts6, 
+#hidingparts7, #hidingparts8{
+    display: none;
+}
+
+input{
+    width:25%;
+    padding: 12px 20px;
+    margin: 8px 0;
+  
+    border: 1.5px solid #ccc;
+    border-radius: 4px;
+    
+}
+
+textarea{ 
+    width: 25%;
+    height: 70px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: 1.5px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type=text]:focus {
+    background-color: lightblue;
+}
+
+input[type=submit]:hover {
+    background-color: lightblue;
+  }
+
+textarea:focus{  
+    width: 50%;
+    background-color: lightblue;
+}
+
+input[type=submit]{
+    width: auto;
+    margin-top: none;
+}
+/**以上聯絡表單的CSS 6/8巫霽加的**/
+
+.backtotopbtn {  /**6/9巫霽加的返回上面按钮**/
+    font-size: 16px;
+    position: fixed;
+    width: 50px;    /**設著按鈕大小**/
+    height:  42px;
+    bottom: 48px;  /** 讓按鈕處於下面起40px right則是從右邊40px**/
+    right: 30px;
+    background: #90bd3d;
+    text-decoration: none;
+    text-align: center;
+    line-height: 40px; /**字體範圍高度**/
+    
+    border-radius: 8px;
+    color: white; 
+}
+
+body {
+    margin: 0;
+    font-family: Microsoft Yahei;
+    background: #333;
+    color: #fff;
+    font-size: 1.1em;
+    line-height: 1.5;
+    text-align: left;
+}
+
+audio{
+    height: 25px;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+h1, h2, h3 {
+    margin: 0;
+    padding: 1em 0;
+}
+
+p {
+    margin: 0;
+    padding: 1em 0;
+}
+
+.buttons {
+    background: none;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border: 1px solid rgba(192, 192, 192, 0.822);
+    border-radius: 4px;
+    margin: 10px;
+    transition: 0.8s;/*緩速*/
+    cursor: pointer;/*改鼠標*/
+    position: relative;/*把動畫固定在按鈕的位置*/
+    box-shadow: 0px 1px 2px rgba(10, 10, 10, 0.699);
+    
+}
+
+.buttons::before { 
+    content: "";/*用來插入東西在before裡*/
+    position: absolute;
+    left: 0;
+    height: 0%;
+    width: 100%;
+    background: #fff;
+    z-index: -1;
+    transition: 0.8s;
+    bottom: 0;
+    
+}
+
+.buttons:hover {
+    background: #fff;
+    color: #333;
+    border-radius: 3px;
+}
+
+.buttons:hover::before {
+    height: 100%;
+}
+
+.nav-buttons {
+    background: none;
+    text-decoration: none;
+    padding: 5px 10px;
+    border: 1px solid rgba(102, 102, 102, 0.452);
+    border-style: outset;
+    border-radius: 4px;
+    margin: 5px;
+    transition: 0.8s;/*緩速*/
+    cursor: pointer;/*改鼠標*/
+    position: relative;/*把動畫固定在按鈕的位置*/
+    box-shadow: 0.5px 1px 0.5px rgba(8, 5, 5, 0.384);
+    
+}
+
+.nav-buttons::before {
+    content: "";/*用來插入東西在before裡*/
+    position: absolute;
+    left: 0;
+    height: 0%;
+    width: 100%;
+    background: #fff;
+    z-index: -1;
+    transition: 0.8s;
+    bottom: 0;
+    
+}
+
+.nav-buttons:visited{
+    color: #adadad;
+}
+
+.nav-buttons:hover {
+    background: rgba(99, 97, 97, 0.301);
+    color: #894096;
+}
+
+.nav-buttons:hover::before {
+    height: 100%;
+}
+
+#firstlook {
+    min-height: 450px;
+    color: #fff;
+    text-align: center;
+}
+
+#firstlook .backgroundimg {
+    position: absolute;
+    background: #333 url("cover.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 450px;
+    z-index: -2;
+    opacity: 0.3;
+}
+
+#firstlook h1 {
+    padding-top: 140px;
+    padding-bottom: 0;
+}
+
+/*如果增加更多字可以左右縮進*/
+#firstlook .container{
+    padding: 0 1.5em;
+}
+
+#sec-A {
+    background: #eaeaea;
+    color: #333;
+    padding-bottom: 2em;
+}
+#sec-A .article-title{
+    padding-left: 0.1em;
+}
+#sec-A li {
+    list-style-type: disc; /***/
+    list-style-position: inside; /***/
+    text-indent: -1em; 
+    padding-left: 2em;
+}
+#sec-B {
+    padding: 2em 1em 1em;
+}
+
+#sec-B ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#sec-B li {
+    margin-bottom: 1em;
+    background: #fff;
+    color: #333;
+}
+
+.card-content {
+    padding: 1.5em;
+}
+
+#sec-C {
+    background: #eaeaea;
+    color: #333;
+    padding: 2em;
+}
+
+#sec-D .cube {
+    padding: 2em;
+    color: #fff;
+}
+
+#sec-D .cube:first-child {
+    background: #034463;
+}
+
+#sec-D a {
+    color: #84ad38;
+    text-decoration: none;
+}
+
+#index-footer {
+    padding: 2em;
+    background: #000;
+    color: #fff;
+    text-align: left;
+}
+
+#container-video{
+    background: #eaeaea;
+    color: #333;
+    width: 100%;
+    position: relative;
+} 
+#container-video iframe{
+    width: 100%;
+    position: absolute;
+    top: 2%;
+    left: 4.4%;
+    height: 90%;
+    width: 55%;
+    border: 3px solid #666;
+    border-style: outset; /***/
+    border-radius: 3px;
+}  
+#player{
+    width:720px; 
+    height:480px;
+    float: left;
+    margin-top: 3%; 
+    margin-bottom: 10px;
+}
+
+#rec_video{
+    position: absolute;
+    top: 2%;
+    left: 61%;
+    height: 100%;
+}
+.pic{
+    width: 160px;
+    height: 100px;
+    cursor: pointer;
+}
+.tkuitem{
+    height: 70px;
+    left: 2%;
+}
+.tkuitem tr{
+    cursor: pointer;
+    
+}
+.aaa{
+    padding-bottom: 3%;
+}
+.switchlight{
+    background:  rgb(22, 22, 22);
+    color: #f0f0f0;
+}
+#switchlight{
+    font-size: 0.7em;
+    position: absolute;
+    background:  rgba(179, 179, 179, 0.733);
+    border: 1px solid rgb(187, 187, 187);
+    box-shadow: 1px 1px 7px rgb(161, 161, 161);
+    border-style: outset;
+    border-radius: 4px;
+    left: 55%;
+    top: 94%;
+    padding: 0.1%;
+    cursor: pointer;
+}
+
+
+.music-name{
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+
+@media only screen and (min-width: 900px) {
+    .box {
+        display: grid;
+        grid-template-columns: 1fr repeat(2, minmax(auto,25em)) 1fr;
+    }
+    #sec-A .article-text p{
+        padding-top: 0;
+    }
+    .container,
+    #sec-B ul {
+        grid-column: 2/4;
+    }
+    .cube, #index-footer div {
+        grid-column: span 2;
+    }
+    
+    
+}
+@media only screen and (max-width: 900px){
+    #container-video{
+        background: #eaeaea;
+        color: #333;
+        width: 100%;
+        position: relative;
+    } 
+    #container-video iframe{
+        background: #eaeaea;
+        color: #333;
+        width: 100%;
+        position: absolute;
+        top: 2%;
+        left: 7%;
+        right: 7%;
+        height: 35%;
+        width: 85%;
+        border: 3px solid #666;
+    } 
+    #rec_video{
+        position: absolute;
+        top: 40%;
+        left: 8%;
+        height: 90%;
+        height: 100%;
+    }
+    .aaa{
+        padding-bottom: 75%;  
+    }
+    #switchlight{
+        position: absolute;
+        background:  rgba(179, 179, 179, 0.733);
+        border: 1px solid rgb(128, 128, 128);
+        left: 89%;
+        top: 38%;
+        padding: 0.1%;
+        cursor: pointer;
+    }
+}
+@media only screen and (max-width: 500px){
+    #container-video iframe{
+        background: #eaeaea;
+        color: #333;
+        width: 100%;
+        position: absolute;
+        top: 2%;
+        left: 7%;
+        right: 7%;
+        height: 30%;
+        width: 85%;
+        border: 3px solid #666;
+    } 
+    #rec_video{
+        position: absolute;
+        top: 35%;
+        left: 8%;
+        height: 90%;
+        height: 100%;
+    }.aaa{
+        padding-bottom: 95%;  
+    }
+    #switchlight{
+        position: absolute;
+        background:  rgba(179, 179, 179, 0.733);
+        border: 1px solid rgb(128, 128, 128);
+        left: 83%;
+        top: 33%;
+        padding: 0.1%;
+        cursor: pointer;
+    }
+    .nav-buttons {
+        background: none;
+        text-decoration: none;
+        padding: 3px 3px;
+        border: 1px solid #666;
+        border-style: outset;
+        border-radius: 4px;
+        margin: 1px;
+        transition: 0.8s;/*緩速*/
+        cursor: pointer;/*改鼠標*/
+        position: relative;/*把動畫固定在按鈕的位置*/
+        box-shadow: 1px 1px 7px rgb(161, 161, 161);
+    }
+    audio{
+        width: 70%;
+        height: 40px;
+        margin-right: 100px;
+    }
+}
