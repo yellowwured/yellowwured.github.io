@@ -425,6 +425,10 @@ p {
         padding: 0.1%;
         cursor: pointer;
     }
+    .nav-buttons {
+        font-size: 55%;
+        padding: 6px 1.8px;
+    }
 }
 @media only screen and (max-width: 500px){
     #container-video iframe{
@@ -458,17 +462,18 @@ p {
         cursor: pointer;
     }
     .nav-buttons {
+        font-size: 50%;
         background: none;
         text-decoration: none;
         padding: 3px 3px;
-        border: 1px solid #666;
+        border: 1px solid rgba(102, 102, 102, 0.452);
         border-style: outset;
         border-radius: 4px;
         margin: 1px;
         transition: 0.8s;/*緩速*/
         cursor: pointer;/*改鼠標*/
         position: relative;/*把動畫固定在按鈕的位置*/
-        box-shadow: 1px 1px 7px rgb(161, 161, 161);
+        box-shadow: 0.5px 1px 0.5px rgba(8, 5, 5, 0.384);
     }
     audio{
         width: 70%;
@@ -476,3 +481,4 @@ p {
         margin-right: 100px;
     }
 }
+
